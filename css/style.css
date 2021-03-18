@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS!</title>
+<script>
+</script>
+<style>
+body {
+	font-family: arial;
+	background-color: #FBE0A6;
+}
+div {
+	border: 2px solid pink;
+	border-radius: 15px 5px 15px 5px;
+	padding: 20px 5px 20px 5px	}
+
+div: hover {
+	background-color: #FFFFFF
+	}
+div: active {
+		background-color: #000000;
+	}
+	span{
+		background-color: white
+		color: black;
+		border: 1px dotted red;
+	}
+	#innerDiv1 {
+background-color: blue
+color: red;
+	}
+	#innderDiv2 {
+background-color: blue
+color: red;
+	}
+
+	.insideSpan {
+background-color: green
+color: purple;
+	}
+</style>
+</head>
+<body>
+	<div>
+	 here is a div
+	 <div id= "innerDiv1"> div <span class= "insideSpan"> inside </span> a div 1 <span>&nbsp; &nbsp;&nbsp;&nbsp; </span>
+	 </div>
+	 <div id= "innderDiv2"> div <span class= "insideSpan"> inside </span> a div 2 <span>&nbsp;&nbsp;&nbsp;&nbsp; </span>
+	 </div>
+	 </div>
+	<div style= "background-color: #EE544A; ">Here is a div </div>
+	<div style= "background-color: #F5AB62; ">Here is a div </div>
+	<div style= "background-color: #FFFF86; ">Here is a div </div>
+	<div style= "background-color: #C5FF86; ">Here is a div </div>
+	<div style= "background-color: #86F7FF; ">Here is a div </div>
+	<div style= "background-color: #D386FF; ">Here is a div </div>
+
+	<style> 
+		table, th, td{
+			border: 10px ;
+		}
+	</style>
+	<table width:100%> 
+	<tr>
+		<th> 1 </th>
+		<th> 2 </th>
+		<th> 3 </th>
+	</tr>
+
+	<tr>
+		<th> 4 </th>
+		<th> 5 </th>
+		<th> 6 </th>
+	</tr>
+
+	<tr>
+		<th>7 </th>
+		<th> 8 </th>
+		<th> 9 </th>
+	</table>
+
+</body>
+</html>
