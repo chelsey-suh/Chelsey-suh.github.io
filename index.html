@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All About Chelsey</title>
+<script>
+function isPrime(x) {
+
+// alert ("Hello World!")
+
+/*prime number can be divisible by 1 and itself
+/P = {2,3,5,7,11.....101...
+/!p = {4,6,9,15.....225...}
+
+/x = 49
+/let i be a possible divisor, starting from 2
+/you check 2, 2+1, 2+2...., x - 1
+12 % 7 = 5
+12 % 2= 1
+*/
+
+	// var x = 289; 
+	var prime = true;
+	//8
+	//factors = 1, 2, sqrt (8), 4, 8
+
+	//25
+	// 2,
+
+	//13
+	//1, 2, 3, 4, 5, 6, 7, 8, 9 ,10, 11, 12, 13
+
+	for (var i = 2; i <= Math.sqrt (x); i++) {
+		if (x % i== 0) {
+			prime= false;
+			break; 
+		}
+		else {
+			continue;
+		}
+	}
+// 4 +5 =9 
+// 4 + "hello" = "4 hello";
+	return prime
+
+	function greatestPrime() {
+		var t0 = performance.now ()
+		var x = 1000000000
+		for (var i = X;  i>= 1; i--) {
+		if (isPrime(i)) {
+			var t1 = performance.now ()
+		
+
+		alert (i + "/nCall took " + (t1 - t0) + "milliseconds")
+		break
+	}
+	else{
+		continue
+		}
+	}
+}
+</script>
+</head>
+<body>
+<h1> Hello World! This is Chelsey's First Webpage. </h1>
+<h2>My hobbies </h2>
+<ul>
+<li> baking</li>
+<ol type="1">
+<li>cookies</li>
+<li>cake</li>
+<li>brownie</li>
+</ol>
+<li> volleyball</li>
+<li> reading </li>
+<li> watching netflix </li>
+<li> violin </li>
+</ul>
+<hr> 
+<b> My favorite website: </b> <a href="https://www.google.com/"> Google</a>
+<br>
+<i> My favorite Pokemon: </i>
+<img src="Images/pokemon-pikachu-.jpg" />
+<br> 
+<u> My Social Media </u>
+<br>
+<a href="https://www.instagram.com/Chelsey.suh"> <img src="Images/instagram.png"/></a> &nbsp; 
+<br>
+<br>
+<table border="1">
+<tr>
+	<td>me</th>
+	<td>dad</th>
+	<td>mom</th>
+	<td>sisters</th>
+</tr>
+
+<tr>
+	<td><img src="Images/me.jpg" />
+	 </td>
+
+	<td><img src="Images/dad.jpg" />
+	</td>
+
+	<td><img src="Images/mom.jpg" />
+	</td>
+
+	<td><img src="Images/sisters.jpg" />
+	</td>
+</tr>
+
+<tr>
+	<td rowspan="2"> My Crush</td>
+	<td colspan="3"> </td>
+	</tr>
+
+<tr>
+	<td colspan="3" >
+		<img src="Images/My Crush.jpg" />
+</tr>
+
+</table>
+<br>
+<button onclick="greatestPrime()"> Check Prime </button>
+</body>
+</html>
